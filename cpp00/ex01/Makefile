@@ -15,12 +15,12 @@ CXXFLAGS	= -Wall -Wextra -Werror -I ./
 CXXFLAGS	+= -std=c++98
 CXX		= c++ $(CXXFLAGS)
 MAIN	= ./main.cpp
-INC		=	./ClassContact.hpp \
-			./ClassPhoneBook.hpp \
-			./Contact.hpp \
+INC		=	./Contact.hpp \
 			./PhoneBook.hpp \
 
 SRCS	= $(MAIN) \
+			./Contact.cpp \
+			./PhoneBook.cpp \
 
 O_DIR	= ./objects/
 OBJS	= $(addprefix $(O_DIR)/, $(SRCS:.cpp=.o))
