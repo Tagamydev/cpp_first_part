@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 NAME	=  tests
-CXXFLAGS	= -I ./ #-Wall -Wextra -Werror -I ./
+CXXFLAGS	= -Wall -Wextra -Werror -I ./
 CXXFLAGS	+= -std=c++98
 CXX		= c++ $(CXXFLAGS)
 MAIN	= ./tests.cpp
